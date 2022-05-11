@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Profile xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xmi:id="_vdLc4NEpEeybSLo5QepWFA" name="tosca" metaclassReference="_3QirgNEpEeybSLo5QepWFA _3QirgdEpEeybSLo5QepWFA _3QirgtEpEeybSLo5QepWFA _3QjSkNEpEeybSLo5QepWFA _Ao5iANEqEeybSLo5QepWFA">
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_3QirgNEpEeybSLo5QepWFA" alias="Model">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Model"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_3QirgdEpEeybSLo5QepWFA" alias="Device">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Device"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_3QirgtEpEeybSLo5QepWFA" alias="ExecutionEnvironment">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#ExecutionEnvironment"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_3QjSkNEpEeybSLo5QepWFA" alias="Artifact">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact"/>
+  </elementImport>
+  <elementImport xmi:type="uml:ElementImport" xmi:id="_Ao5iANEqEeybSLo5QepWFA" alias="CommunicationPath">
+    <importedElement xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#CommunicationPath"/>
+  </elementImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ve-zsNEpEeybSLo5QepWFA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+  </packageImport>
+  <packageImport xmi:type="uml:PackageImport" xmi:id="_ve_awNEpEeybSLo5QepWFA">
+    <importedPackage xmi:type="uml:Model" href="pathmap://UML_METAMODELS/UML.metamodel.uml#_0"/>
+  </packageImport>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_D2wlINEqEeybSLo5QepWFA" name="NodeTemplate">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_qMDFANEqEeybSLo5QepWFA" name="base_NodeType" type="_RHJdINEqEeybSLo5QepWFA" association="_qMCd8NEqEeybSLo5QepWFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_qMDFAdEqEeybSLo5QepWFA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_RHJdINEqEeybSLo5QepWFA" name="NodeType"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_SSfO4NEqEeybSLo5QepWFA" name="RelationType"/>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_WByLINEqEeybSLo5QepWFA" name="RelationTemplate">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_irCxsNEqEeybSLo5QepWFA" name="base_CommunicationPath" association="_irCKoNEqEeybSLo5QepWFA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#CommunicationPath"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_irCxsdEqEeybSLo5QepWFA"/>
+    </ownedAttribute>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_pOWtsNEqEeybSLo5QepWFA" name="base_RelationType" type="_SSfO4NEqEeybSLo5QepWFA" association="_pOWGoNEqEeybSLo5QepWFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_pOWtsdEqEeybSLo5QepWFA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_YNP9INEqEeybSLo5QepWFA" name="DeviceTemplate">
+    <generalization xmi:type="uml:Generalization" xmi:id="_tpZVoNEqEeybSLo5QepWFA" general="_D2wlINEqEeybSLo5QepWFA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hFr9cdEqEeybSLo5QepWFA" name="base_Device" association="_hFrWYNEqEeybSLo5QepWFA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Device"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hFr9ctEqEeybSLo5QepWFA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_aJfAUNEqEeybSLo5QepWFA" name="EETemplate">
+    <generalization xmi:type="uml:Generalization" xmi:id="_uJGwcNEqEeybSLo5QepWFA" general="_D2wlINEqEeybSLo5QepWFA"/>
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_hog9sdEqEeybSLo5QepWFA" name="base_ExecutionEnvironment" association="_hogWoNEqEeybSLo5QepWFA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#ExecutionEnvironment"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_hog9stEqEeybSLo5QepWFA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_crb_sNEqEeybSLo5QepWFA" name="ArtifactTemplate">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_iDozcNEqEeybSLo5QepWFA" name="base_Artifact" association="_iDoMYNEqEeybSLo5QepWFA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Artifact"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_iDozcdEqEeybSLo5QepWFA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_hFrWYNEqEeybSLo5QepWFA" name="E_DeviceTemplate_Device15" memberEnd="_hFr9cNEqEeybSLo5QepWFA _hFr9cdEqEeybSLo5QepWFA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_hFr9cNEqEeybSLo5QepWFA" name="extension_DeviceTemplate" type="_YNP9INEqEeybSLo5QepWFA" aggregation="composite" association="_hFrWYNEqEeybSLo5QepWFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_hogWoNEqEeybSLo5QepWFA" name="E_EETemplate_ExecutionEnvironment16" memberEnd="_hog9sNEqEeybSLo5QepWFA _hog9sdEqEeybSLo5QepWFA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_hog9sNEqEeybSLo5QepWFA" name="extension_EETemplate" type="_aJfAUNEqEeybSLo5QepWFA" aggregation="composite" association="_hogWoNEqEeybSLo5QepWFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_iDoMYNEqEeybSLo5QepWFA" name="E_ArtifactTemplate_Artifact17" memberEnd="_iDoMYdEqEeybSLo5QepWFA _iDozcNEqEeybSLo5QepWFA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_iDoMYdEqEeybSLo5QepWFA" name="extension_ArtifactTemplate" type="_crb_sNEqEeybSLo5QepWFA" aggregation="composite" association="_iDoMYNEqEeybSLo5QepWFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_irCKoNEqEeybSLo5QepWFA" name="E_RelationTemplate_CommunicationPath18" memberEnd="_irCKodEqEeybSLo5QepWFA _irCxsNEqEeybSLo5QepWFA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_irCKodEqEeybSLo5QepWFA" name="extension_RelationTemplate" type="_WByLINEqEeybSLo5QepWFA" aggregation="composite" association="_irCKoNEqEeybSLo5QepWFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Stereotype" xmi:id="_i52pwNEqEeybSLo5QepWFA" name="TopologyTemplate">
+    <ownedAttribute xmi:type="uml:Property" xmi:id="_mWtyMNEqEeybSLo5QepWFA" name="base_Model" association="_mWtLINEqEeybSLo5QepWFA">
+      <type xmi:type="uml:Class" href="pathmap://UML_METAMODELS/UML.metamodel.uml#Model"/>
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_mWtyMdEqEeybSLo5QepWFA"/>
+    </ownedAttribute>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_mWtLINEqEeybSLo5QepWFA" name="E_TopologyTemplate_Model20" memberEnd="_mWtLIdEqEeybSLo5QepWFA _mWtyMNEqEeybSLo5QepWFA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_mWtLIdEqEeybSLo5QepWFA" name="extension_TopologyTemplate" type="_i52pwNEqEeybSLo5QepWFA" aggregation="composite" association="_mWtLINEqEeybSLo5QepWFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_pOWGoNEqEeybSLo5QepWFA" name="E_RelationTemplate_RelationType21" memberEnd="_pOWGodEqEeybSLo5QepWFA _pOWtsNEqEeybSLo5QepWFA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_pOWGodEqEeybSLo5QepWFA" name="extension_RelationTemplate" type="_WByLINEqEeybSLo5QepWFA" aggregation="composite" association="_pOWGoNEqEeybSLo5QepWFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Extension" xmi:id="_qMCd8NEqEeybSLo5QepWFA" name="E_NodeTemplate_NodeType22" memberEnd="_qMCd8dEqEeybSLo5QepWFA _qMDFANEqEeybSLo5QepWFA">
+    <ownedEnd xmi:type="uml:ExtensionEnd" xmi:id="_qMCd8dEqEeybSLo5QepWFA" name="extension_NodeTemplate" type="_D2wlINEqEeybSLo5QepWFA" aggregation="composite" association="_qMCd8NEqEeybSLo5QepWFA"/>
+  </packagedElement>
+  <packagedElement xmi:type="uml:Association" xmi:id="_xCqXgNEqEeybSLo5QepWFA" memberEnd="_xCq-ktEqEeybSLo5QepWFA _xCq-k9EqEeybSLo5QepWFA">
+    <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_xCq-kNEqEeybSLo5QepWFA" source="org.eclipse.papyrus">
+      <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_xCq-kdEqEeybSLo5QepWFA" key="nature" value="UML_Nature"/>
+    </eAnnotations>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xCq-ktEqEeybSLo5QepWFA" name="node" type="_D2wlINEqEeybSLo5QepWFA" association="_xCqXgNEqEeybSLo5QepWFA">
+      <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zK52YNEqEeybSLo5QepWFA"/>
+      <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zLMxUNEqEeybSLo5QepWFA" value="*"/>
+    </ownedEnd>
+    <ownedEnd xmi:type="uml:Property" xmi:id="_xCq-k9EqEeybSLo5QepWFA" name="artifact" type="_crb_sNEqEeybSLo5QepWFA" aggregation="composite" association="_xCqXgNEqEeybSLo5QepWFA"/>
+  </packagedElement>
+</uml:Profile>
